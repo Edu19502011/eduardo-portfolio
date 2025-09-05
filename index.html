@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Eduardo<span class="accent">.</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-translate="nav_home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-translate="nav_about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-translate="nav_skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-translate="nav_projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link" data-translate="nav_achievements">Conquistas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background Canvas -->
+    <canvas id="matrix-bg" class="matrix-background"></canvas>
+    <canvas id="particles-bg" class="particles-background"></canvas>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-translate="hero_greeting">Olá, eu sou</span> <span class="accent">Eduardo</span>
+                    <span class="typing-cursor">|</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">Software Developer • 16 anos • 5 anos de experiência</p>
+                <p class="hero-description" data-translate="hero_description">
+                    Apaixonado por tecnologia e inovação, transformo ideias em código há 5 anos. 
+                    Especializado em desenvolvimento full-stack e sempre em busca de novos desafios.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-translate="hero_btn_projects">Ver Projetos</a>
+                    <a href="#achievements" class="btn btn-secondary" data-translate="hero_btn_contact">Vamos Conversar</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- 3D Code Visualization -->
+                <div class="code-visualization-3d">
+                    <div class="code-screen">
+                        <div class="screen-header">
+                            <div class="screen-controls">
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                                <span class="control close"></span>
+                            </div>
+                            <span class="screen-title">eduardo.dev - VS Code</span>
+                        </div>
+                        
+                        <div class="code-editor">
+                            <div class="editor-sidebar">
+                                <div class="file-tree">
+                                    <div class="file-item active">
+                                        <i class="fas fa-file-code"></i>
+                                        <span>eduardo.js</span>
+                                    </div>
+                                    <div class="file-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <span>skills.json</span>
+                                    </div>
+                                    <div class="file-item">
+                                        <i class="fas fa-folder"></i>
+                                        <span>projects/</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="editor-main">
+                                <div class="editor-tabs">
+                                    <div class="tab active">
+                                        <i class="fab fa-js"></i>
+                                        eduardo.js
+                                    </div>
+                                </div>
+                                
+                                <div class="code-content">
+                                    <div class="code-line">
+                                        <span class="line-number">1</span>
+                                        <span class="code-text">
+                                            <span class="comment">// Eduardo - Software Developer Profile</span>
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">2</span>
+                                        <span class="code-text">
+                                            <span class="keyword">const</span> <span class="variable">eduardo</span> = {
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">3</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">age</span>: <span class="number">16</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">4</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">experience</span>: <span class="string">"5+ years"</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">5</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"Full-Stack Developer"</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">6</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Python"</span>, <span class="string">"Node.js"</span>],
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">7</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Creating amazing solutions"</span>,
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">8</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;<span class="method">getMotivation</span>() {
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">9</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Coding is my superpower! 🚀"</span>;
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">10</span>
+                                        <span class="code-text">
+                                            &nbsp;&nbsp;}
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">11</span>
+                                        <span class="code-text">
+                                            };
+                                        </span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="line-number">12</span>
+                                        <span class="code-text">
+                                            
+                                        </span>
+                                    </div>
+                                    <div class="code-line active-line">
+                                        <span class="line-number">13</span>
+                                        <span class="code-text">
+                                            <span class="variable">eduardo</span>.<span class="method">getMotivation</span>();<span class="cursor">|</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 3D Code Cubes Floating -->
+                    <div class="floating-code-elements">
+                        <div class="code-cube cube-1">
+                            <div class="cube-face front">JS</div>
+                            <div class="cube-face back">React</div>
+                            <div class="cube-face right">Node</div>
+                            <div class="cube-face left">Python</div>
+                            <div class="cube-face top">HTML</div>
+                            <div class="cube-face bottom">CSS</div>
+                        </div>
+                        
+                        <div class="code-cube cube-2">
+                            <div class="cube-face front">💻</div>
+                            <div class="cube-face back">🚀</div>
+                            <div class="cube-face right">⚡</div>
+                            <div class="cube-face left">🔥</div>
+                            <div class="cube-face top">✨</div>
+                            <div class="cube-face bottom">💡</div>
+                        </div>
+                        
+                        <div class="code-cube cube-3">
+                            <div class="cube-face front">API</div>
+                            <div class="cube-face back">SQL</div>
+                            <div class="cube-face right">AWS</div>
+                            <div class="cube-face left">Git</div>
+                            <div class="cube-face top">DevOps</div>
+                            <div class="cube-face bottom">AI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about_title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="about_subtitle">Desenvolvedor apaixonado por tecnologia</h3>
+                    <p data-translate="about_text1">
+                        Meu nome é Eduardo, tenho 16 anos e sou um Software Developer com 5 anos de experiência 
+                        em programação. Comecei minha jornada no desenvolvimento aos 11 anos e desde então 
+                        tenho me dedicado a aprender e dominar diferentes tecnologias.
+                    </p>
+                    <p data-translate="about_text2">
+                        Acredito que a tecnologia tem o poder de transformar o mundo, e é por isso que me dedico 
+                        a criar soluções inovadoras e eficientes. Estou sempre em busca de novos desafios e 
+                        oportunidades para crescer profissionalmente.
+                    </p>
+                    <!-- STATS CARDS 3D -->
+                    <div class="stats-3d">
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label" data-translate="about_stat1">Anos de Experiência</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-rocket"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label" data-translate="about_stat2">Projetos Concluídos</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-cogs"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label" data-translate="about_stat3">Tecnologias</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- ADDITIONAL STATS CARDS -->
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Commits GitHub</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Open Source</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-card-3d">
+                            <div class="stat-card-inner">
+                                <div class="stat-icon">
+                                    <i class="fas fa-medal"></i>
+                                    <div class="stat-glow"></div>
+                                </div>
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Certificações</div>
+                                <div class="stat-particles"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <!-- Interactive 3D About Card -->
+                    <div class="about-card-3d">
+                        <div class="about-card-inner">
+                            <div class="about-front">
+                                <div class="avatar-placeholder">
+                                    <div class="avatar-icon">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="avatar-rings">
+                                        <div class="ring ring-1"></div>
+                                        <div class="ring ring-2"></div>
+                                        <div class="ring ring-3"></div>
+                                    </div>
+                                </div>
+                                <h3>Eduardo</h3>
+                                <p class="role-tag">Full-Stack Developer</p>
+                                <div class="interaction-hint">
+                                    <i class="fas fa-hand-pointer"></i>
+                                    <span>Clique para descobrir mais</span>
+                                </div>
+                            </div>
+                            
+                            <div class="about-back">
+                                <div class="developer-info">
+                                    <div class="info-item">
+                                        <i class="fas fa-code"></i>
+                                        <div>
+                                            <strong>Linguagens</strong>
+                                            <span>JavaScript, Python, Java</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-tools"></i>
+                                        <div>
+                                            <strong>Frameworks</strong>
+                                            <span>React, Node.js, Django</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-database"></i>
+                                        <div>
+                                            <strong>Databases</strong>
+                                            <span>MongoDB, PostgreSQL, MySQL</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-cloud"></i>
+                                        <div>
+                                            <strong>Cloud</strong>
+                                            <span>AWS, Docker, Firebase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back-hint">
+                                    <i class="fas fa-undo"></i>
+                                    <span>Clique novamente</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional 3D Elements -->
+                    <div class="floating-badges">
+                        <div class="badge-3d badge-1">
+                            <div class="badge-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span>Autodidata</span>
+                        </div>
+                        
+                        <div class="badge-3d badge-2">
+                            <div class="badge-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <span>5+ Anos</span>
+                        </div>
+                        
+                        <div class="badge-3d badge-3">
+                            <div class="badge-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span>Inovador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Meus Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>Desenvolvimento Web</h3>
+                            <p>Criação de sites e aplicações web modernas</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                                <li><i class="fas fa-check"></i> JavaScript ES6+</li>
+                                <li><i class="fas fa-check"></i> React & Vue</li>
+                                <li><i class="fas fa-check"></i> Responsive Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-server"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>Backend Development</h3>
+                            <p>APIs robustas e sistemas escaláveis</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Node.js & Python</li>
+                                <li><i class="fas fa-check"></i> REST APIs</li>
+                                <li><i class="fas fa-check"></i> Databases</li>
+                                <li><i class="fas fa-check"></i> Cloud Deploy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>Mobile Apps</h3>
+                            <p>Aplicativos para iOS e Android</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> React Native</li>
+                                <li><i class="fas fa-check"></i> Cross-platform</li>
+                                <li><i class="fas fa-check"></i> Native Performance</li>
+                                <li><i class="fas fa-check"></i> App Store Deploy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>Data Analytics</h3>
+                            <p>Dashboards e análise de dados</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Python Analytics</li>
+                                <li><i class="fas fa-check"></i> Data Visualization</li>
+                                <li><i class="fas fa-check"></i> Machine Learning</li>
+                                <li><i class="fas fa-check"></i> Real-time Data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-cloud"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>Cloud Solutions</h3>
+                            <p>Deploy e infraestrutura na nuvem</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> AWS & Azure</li>
+                                <li><i class="fas fa-check"></i> Docker Containers</li>
+                                <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+                                <li><i class="fas fa-check"></i> Auto Scaling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card-3d">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-robot"></i>
+                                <div class="icon-orbit"></div>
+                            </div>
+                            <h3>AI & Automation</h3>
+                            <p>Inteligência artificial e automação</p>
+                        </div>
+                        <div class="service-back">
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> ChatBots</li>
+                                <li><i class="fas fa-check"></i> Process Automation</li>
+                                <li><i class="fas fa-check"></i> AI Integration</li>
+                                <li><i class="fas fa-check"></i> Custom Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Cards -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Minha Jornada</h2>
+            <div class="timeline-3d">
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-content">
+                            <h3>Primeiro Código</h3>
+                            <p>Aos 11 anos, escrevi meu primeiro "Hello World" e me apaixonei pela programação</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h3>JavaScript Master</h3>
+                            <p>Dominei JavaScript e comecei a criar aplicações interativas impressionantes</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">DOM</span>
+                                <span class="tech-tag">APIs</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-content">
+                            <h3>Full-Stack Journey</h3>
+                            <p>Expandi para backend com Python e Node.js, criando aplicações completas</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Databases</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h3>React Specialist</h3>
+                            <p>Me especializei em React e frameworks modernos, criando UIs incríveis</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Vue</span>
+                                <span class="tech-tag">TypeScript</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-content">
+                            <h3>Cloud & DevOps</h3>
+                            <p>Aventurei-me no mundo DevOps e Cloud, automatizando deploys e infraestrutura</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-card-3d">
+                    <div class="timeline-card-inner">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3>AI & Innovation</h3>
+                            <p>Hoje, aos 16 anos, integro IA em projetos e lidero inovação tecnológica</p>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Innovation</span>
+                            </div>
+                        </div>
+                        <div class="timeline-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills_title">Minhas Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span data-translate="skills_frontend">Frontend</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> <span data-translate="skills_backend">Backend</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>APIs RESTful</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> <span data-translate="skills_tools">Ferramentas</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git/GitHub</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects_title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project1_title">E-commerce Platform</h3>
+                        <p data-translate="project1_desc">Plataforma completa de e-commerce com carrinho de compras, pagamentos e painel administrativo.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project2_title">Task Management App</h3>
+                        <p data-translate="project2_desc">Aplicativo de gerenciamento de tarefas com drag & drop, categorias e notificações.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project3_title">Analytics Dashboard</h3>
+                        <p data-translate="project3_desc">Dashboard interativo para visualização de dados com gráficos e métricas em tempo real.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop" alt="Mobile App">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project4_title">Mobile Fitness App</h3>
+                        <p data-translate="project4_desc">Aplicativo móvel para acompanhamento de exercícios com integração a wearables.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Chat Application">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project5_title">Real-time Chat</h3>
+                        <p data-translate="project5_desc">Aplicação de chat em tempo real com salas, emojis e compartilhamento de arquivos.</p>
+                        <div class="project-tags">
+                            <span class="tag">Socket.io</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=400&h=300&fit=crop" alt="AI Assistant">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="project6_title">AI Assistant Bot</h3>
+                        <p data-translate="project6_desc">Bot inteligente com processamento de linguagem natural e integração com APIs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card-3d">
+                    <div class="testimonial-card-inner">
+                        <div class="testimonial-front">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-tie"></i>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>João Silva</h3>
+                            <p class="client-role">CEO, TechStart</p>
+                        </div>
+                        <div class="testimonial-back">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Eduardo entregou um projeto excepcional! Sua dedicação e expertise técnica impressionaram toda a equipe. Definitivamente um talento raro."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card-3d">
+                    <div class="testimonial-card-inner">
+                        <div class="testimonial-front">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Maria Santos</h3>
+                            <p class="client-role">Professora, UNICAMP</p>
+                        </div>
+                        <div class="testimonial-back">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Trabalhar com Eduardo foi uma experiência incrível. Ele combina conhecimento técnico avançado com uma maturidade impressionante para sua idade."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card-3d">
+                    <div class="testimonial-card-inner">
+                        <div class="testimonial-front">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-cog"></i>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Carlos Tech</h3>
+                            <p class="client-role">Lead Developer</p>
+                        </div>
+                        <div class="testimonial-back">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"Eduardo transformou nossa ideia em realidade de forma brilhante. Seu código é limpo, eficiente e suas soluções são sempre inovadoras."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card-3d">
+                    <div class="testimonial-card-inner">
+                        <div class="testimonial-front">
+                            <div class="client-avatar">
+                                <i class="fas fa-user-astronaut"></i>
+                                <div class="avatar-glow"></div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Ana Innovation</h3>
+                            <p class="client-role">Startup Founder</p>
+                        </div>
+                        <div class="testimonial-back">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>"A capacidade do Eduardo de entender requisitos complexos e entregar soluções elegantes é extraordinária. Um verdadeiro prodígio da programação!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Path Cards -->
+    <section id="learning" class="learning">
+        <div class="container">
+            <h2 class="section-title">Meu Caminho de Aprendizado</h2>
+            <div class="learning-grid">
+                <div class="learning-card-3d">
+                    <div class="learning-card-inner">
+                        <div class="learning-icon">
+                            <i class="fas fa-brain"></i>
+                            <div class="learning-pulse"></div>
+                        </div>
+                        <h3>Aprendizado Contínuo</h3>
+                        <p>Sempre estudando novas tecnologias e tendências do mercado</p>
+                        <div class="learning-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="progress-text">95% Dedicação</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-card-3d">
+                    <div class="learning-card-inner">
+                        <div class="learning-icon">
+                            <i class="fas fa-lightbulb"></i>
+                            <div class="learning-pulse"></div>
+                        </div>
+                        <h3>Inovação Constante</h3>
+                        <p>Criando soluções únicas para problemas complexos</p>
+                        <div class="learning-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                            <span class="progress-text">88% Criatividade</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-card-3d">
+                    <div class="learning-card-inner">
+                        <div class="learning-icon">
+                            <i class="fas fa-rocket"></i>
+                            <div class="learning-pulse"></div>
+                        </div>
+                        <h3>Crescimento Acelerado</h3>
+                        <p>Evolução rápida e constante em todas as áreas técnicas</p>
+                        <div class="learning-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                            <span class="progress-text">92% Evolução</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-card-3d">
+                    <div class="learning-card-inner">
+                        <div class="learning-icon">
+                            <i class="fas fa-users"></i>
+                            <div class="learning-pulse"></div>
+                        </div>
+                        <h3>Colaboração</h3>
+                        <p>Trabalhando em equipe e compartilhando conhecimento</p>
+                        <div class="learning-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="progress-text">90% Team Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title" data-translate="achievements_title">Conquistas & Certificações</h2>
+            
+            <!-- Achievement Cards Grid -->
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 data-translate="achievement1_title">Jovem Desenvolvedor do Ano</h3>
+                        <p data-translate="achievement1_desc">Reconhecimento pela excelência em desenvolvimento de software aos 16 anos.</p>
+                        <div class="achievement-date">2024</div>
+                    </div>
+                    <div class="achievement-particles"></div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-aws"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 data-translate="achievement2_title">Certificação AWS Cloud</h3>
+                        <p data-translate="achievement2_desc">Certificado em Amazon Web Services - Cloud Practitioner.</p>
+                        <div class="achievement-date">2024</div>
+                    </div>
+                    <div class="achievement-particles"></div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 data-translate="achievement3_title">Hackathon Winner</h3>
+                        <p data-translate="achievement3_desc">Primeiro lugar em competição de desenvolvimento de aplicativos.</p>
+                        <div class="achievement-date">2023</div>
+                    </div>
+                    <div class="achievement-particles"></div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-github"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 data-translate="achievement4_title">Open Source Contributor</h3>
+                        <p data-translate="achievement4_desc">Mais de 50 contribuições para projetos open source no GitHub.</p>
+                        <div class="achievement-date">2023-2024</div>
+                    </div>
+                    <div class="achievement-particles"></div>
+                </div>
+            </div>
+
+            <!-- Contact Information Card -->
+            <div class="contact-card-3d">
+                <div class="contact-card-inner">
+                    <div class="contact-front">
+                        <h3>Vamos Conversar?</h3>
+                        <p>Interessado em colaborar ou discutir oportunidades?</p>
+                        <div class="contact-cta">
+                            <i class="fas fa-hand-point-up"></i>
+                            <span>Clique para ver contatos</span>
+                        </div>
+                    </div>
+                    <div class="contact-back">
+                        <div class="contact-methods-mini">
+                            <div class="contact-method-mini">
+                                <i class="fas fa-envelope"></i>
+                                <span>eduardo.dev@email.com</span>
+                            </div>
+                            <div class="contact-method-mini">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/eduardo</span>
+                            </div>
+                            <div class="contact-method-mini">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/eduardo</span>
+                            </div>
+                            <div class="contact-method-mini">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>São Paulo, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Showcase -->
+            <div class="tech-showcase">
+                <h3>Tecnologias Principais</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fas fa-database"></i>
+                        <span>Database</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-card">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Eduardo. <span data-translate="footer_text">Todos os direitos reservados.</span></p>
+                <p><span data-translate="footer_made">Feito com</span> <i class="fas fa-heart"></i> <span data-translate="footer_and">e muito código</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="advanced-features.js"></script>
+</body>
+</html>
